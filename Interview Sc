@@ -1,0 +1,50 @@
+import java.util.Scanner;
+
+/*
+ * 
+ *     
+echo “what is your name”
+
+Read name
+
+x=$(echo name)
+
+echo “what is your favorite ice cream flavor”
+
+Read ice cream
+
+x=$(echo ice cream)
+
+Say -Hello $name, your favorite $ice cream is good. 
+
+ * 
+ */
+public class IceCream {
+	public static void main(String [] args) {
+
+		boolean goodIceCream = true;
+		String myFavorite = "pistachio";
+		
+		Scanner scan = new Scanner(System.in);
+		System.out.print("What is your name: ");
+
+		String name = scan.nextLine();
+		System.out.println("Hello, " + name);
+
+		System.out.print("What is your favorite ice cream flavor: ");
+
+		String iceCreamFlavor = scan.nextLine();
+
+		System.out.println("Your favorite ice cream flavor is " + iceCreamFlavor);
+
+		goodIceCream = iceCreamFlavor.equals(myFavorite);
+		
+		System.out.println("Hello " + name + ", your favorite " + iceCreamFlavor + " is good."); 
+
+		if (goodIceCream)
+			System.out.println("My favorite is also " + iceCreamFlavor);
+		else
+			System.out.println("I prefer " + myFavorite + " better");
+			
+	}
+}
