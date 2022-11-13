@@ -1,0 +1,11 @@
+///Solution is to set it to max value, so it can recognize the highest numbers.
+
+int smallestSoFar = Integer.MAX VALUE; // make the it the biggest integer
+for (int i = 0; i < stones.length - 1 ; i++) {
+	int current Diff = abs(stones[i] - stones[i + 1]):
+	If (currentDiff < smallestSoFar) {
+	// update what is the smallest
+	smallestSoFar = currentDiff;
+       }
+}
+return 0;
